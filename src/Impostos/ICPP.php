@@ -4,9 +4,9 @@ namespace Alura\DesignPattern\Impostos;
 
 use Alura\DesignPattern\Orcamento;
 
-class ICPP extends ImpostoComDuasAliquotas
+class Icpp extends ImpostoCom2Aliquotas
 {
-    protected function deveApplicarTaxaMaxima(Orcamento $orcamento): bool
+    protected function deveAplicarTaxaMaxima(Orcamento $orcamento): bool
     {
         return $orcamento->valor > 500;
     }

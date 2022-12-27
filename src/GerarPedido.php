@@ -4,14 +4,13 @@ namespace Alura\DesignPattern;
 
 class GerarPedido
 {
-
     private float $valorOrcamento;
     private int $numeroItens;
     private string $nomeCliente;
 
     public function __construct(
-        float  $valorOrcamento,
-        int    $numeroItens,
+        float $valorOrcamento,
+        int $numeroItens,
         string $nomeCliente
     ) {
         $this->valorOrcamento = $valorOrcamento;
@@ -28,27 +27,11 @@ class GerarPedido
     }
 
     /**
-     * @param float $valorOrcamento
-     */
-    public function setValorOrcamento(float $valorOrcamento): void
-    {
-        $this->valorOrcamento = $valorOrcamento;
-    }
-
-    /**
      * @return int
      */
     public function getNumeroItens(): int
     {
         return $this->numeroItens;
-    }
-
-    /**
-     * @param int $numeroItens
-     */
-    public function setNumeroItens(int $numeroItens): void
-    {
-        $this->numeroItens = $numeroItens;
     }
 
     /**
@@ -58,14 +41,4 @@ class GerarPedido
     {
         return $this->nomeCliente;
     }
-
-    /**
-     * @param string $nomeCliente
-     */
-    public function setNomeCliente(string $nomeCliente): void
-    {
-        $this->nomeCliente = $nomeCliente;
-    }
-
-
 }

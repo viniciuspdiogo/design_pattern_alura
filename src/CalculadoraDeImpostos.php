@@ -10,5 +10,4 @@ class CalculadoraDeImpostos
     {
         return $imposto->calculaImposto($orcamento);
     }
-
 }
